@@ -1,0 +1,53 @@
+﻿@model btlAspnet.Models.DataModels.User
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Home.cshtml";
+}
+<div class="breadcrumb-area pt-65 pb-70 bg-img" style="background-image:url(img/bg-image/hop-brech-bg.jpg);">
+    <div class="container">
+        <div class="breadcrumb-wrap text-center">
+            <h3>Login</h3>
+            <ol class="breadcrumb breadcrumb-list">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Login</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End Here -->
+<!-- Login Page Start Here -->
+<div class="login white-bg ptb-80">
+    <div class="container">
+        <h3 class="login-header">Log in to your account </h3>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="login-form">
+                    <p>@Html.Raw(ViewBag.error)</p>
+                    <form asp-controller="Home" asp-action="Login" method="post">
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-3 col-form-label">UserName</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="username" class="form-control" id="email" placeholder="UserName">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+                            <div class="col-sm-7">
+                                <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+                                <button class="btn show-btn" type="button">Show</button>
+                            </div>
+                        </div>
+                        <div class="login-details text-center mb-25">
+                            <a href="#">Forgot your password? </a>
+                            <button type="submit" class="login-btn">Sign in</button>
+                        </div>
+                        <div class="login-footer text-center">
+                            <p>No account? <a asp-controller="Home" asp-action="Register">Register here</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

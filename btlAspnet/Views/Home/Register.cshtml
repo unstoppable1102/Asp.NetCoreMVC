@@ -1,0 +1,65 @@
+﻿@model btlAspnet.Models.DataModels.User
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Home.cshtml";
+}
+<div class="breadcrumb-area pt-65 pb-70 bg-img" style="background-image:url(img/bg-image/hop-brech-bg.jpg);">
+    <div class="container">
+        <div class="breadcrumb-wrap text-center">
+            <h3>Register</h3>
+            <ol class="breadcrumb breadcrumb-list">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Register</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End Here -->
+<!-- Regester Page Start Here -->
+<div class="register-area white-bg ptb-80">
+    <div class="container">
+        <h3 class="login-header">Create an account </h3>
+        <div class="row">
+            <div class="offset-xl-2 col-xl-10">
+                <div class="register-form login-form clearfix">
+                    <form asp-action="Register" asp-controller="Home" method="post">
+                        <p>Already have an account? <a asp-action="Login" asp-controller="Home">Log in instead!</a></p>
+                        <div class="form-group row">
+                            <label for="f-name" class="col-lg-3 col-md-3 col-form-label">User Name</label>
+                            <div class="col-lg-6 col-md-6">
+                                <input type="text" class="form-control" id="f-name" asp-for="UserName">
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-lg-3 col-md-3 col-form-label">Password</label>
+                            <div class="col-lg-6 col-md-6">
+                                <input asp-for="Password" type="password" class="form-control" id="inputPassword">
+                                <button class="btn show-btn" type="button">Show</button>
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="l-name" class="col-lg-3 col-md-3 col-form-label">Full Name</label>
+                            <div class="col-lg-6 col-md-6">
+                                <input asp-for="FullName" type="text" class="form-control" id="l-name">
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-40">
+                            <label for="email" class="col-lg-3 col-md-3 col-form-label">Email</label>
+                            <div class="col-lg-6 col-md-6">
+                                <input asp-for="Email" type="text" class="form-control" id="email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="w-25 m-auto ">
+                            <button type="submit" class="login-btn m-auto">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

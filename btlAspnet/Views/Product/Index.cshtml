@@ -1,0 +1,157 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model btlAspnet.Models.ProductCategoryViewModel
+<div class="breadcrumb-area pt-65 pb-70 bg-img" style="background-image:url(home/img/bg-image/hop-brech-bg.jpg);">
+    <div class="container">
+        <div class="breadcrumb-wrap text-center">
+            <h3>Shop</h3>
+            <ol class="breadcrumb breadcrumb-list">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Shop</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Area End Here -->
+<!-- Shop Page Start -->
+<div class="main-shop-page white-bg ptb-80">
+    <div class="container">
+        <!-- Row End -->
+        <div class="row flex-row-reverse">
+            <!-- Product Categorie List Start -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Grid & List View Start -->
+                <div class="grid-list-top border-default universal-padding d-lg-flex justify-content-md-between align-items-center mb-30">
+                    <div class="grid-list-view d-flex align-items-center  mb-sm-15">
+                       
+                    </div>
+                    <!-- Toolbar Short Area Start -->
+                    <div class="main-toolbar-sorter clearfix">
+                        <div class="toolbar-sorter d-md-flex justify-content-end">
+                            <form asp-action="Index" asp-controller="Product" method="get" class="d-flex" >
+                                <div class="d-flex align-items-lg-center">Sort By:</div>
+                                <div class="ml-2" style="width:150px">
+                                    <select class="sorter wide" name="sort" asp-items="ViewBag.SortOptions" onchange="this.form.submit()" >
+                                    </select>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Toolbar Short Area End -->
+                </div>
+                <!-- Grid & List View End -->
+                <div class="shop-area mb-all-40">
+                    <!-- Grid & List Main Area End -->
+                    <div class="tab-content Products-area">
+                        <div id="grid-view" class="tab-pane fade show active">
+                            <div class="row">
+                                @foreach(var p in Model.Products)
+                                {
+                                    <div class="col-lg-4 col-md-6 col-sm-6">
+
+                                        <!-- Single Product Start -->
+                                        <div class="single-aboss-product mb-3" >
+                                            <div class="pro-img" >
+                                                <a href="@Url.Action("Detail", "Product", new { id = p.Id })"><img src="~/images/@p.Image" alt="" ></a>
+                                                <div class="pro-actions">
+                                                    <a data-toggle="modal" data-target="#product-window" class="quick-view" href="#"><i class="icon-zoom"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="pro-content">
+                                                <h4><a href="product-details.html">@p.ProductName</a></h4>
+                                                <div class="pro-price-cart">
+                                                    <div class="pro-home-price">
+                                                        <span>$@p.Price</span>
+                                                    </div>
+                                                    <div class="pro-cart">
+                                                        <a title="Add To Cart" href="#"><i class="icon-cart"></i></a>
+                                                        <a title="Wishlist" href="#"><i class="icon-like"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Product End -->
+                                    </div>
+                                }
+                                
+                            </div>
+                            <!-- Row End -->
+                        </div>
+                        <!-- #grid view End -->
+                        
+                        <!-- #list view End -->
+                    </div>
+                    <!-- Grid & List Main Area End -->
+                </div>
+                <!-- Shop Breadcrumb Area Start -->
+                <div class="shop-breadcrumb-area border-default mt-40">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-5 col-12">
+                            <span class="show-items">Showing 1-12 of 13 item(s) </span>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-sm-7 col-12">
+                            <ul class="pfolio-breadcrumb-list text-center">
+                                <li class="float-left prev"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="float-right next"><a href="#">Next<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shop Breadcrumb Area End -->
+            </div>
+            <!-- product Categorie List End -->
+            <!-- Sidebar Shopping Option Start -->
+            <div class="col-lg-3 col-md-4">
+                <div class="sidebar">
+                    <!-- Price Filter Options Start -->
+                    <div class="search-filter mb-30">
+                        <h3 class="sidebar-title">filter by price</h3>
+                        <form class="sidbar-style" id="filter-form" method="get" action="@Url.Action("Index", "Product")">
+                            <div id="slider-range"></div>
+                            <input type="text" id="amount" class="amount-range" readonly>
+                            <input type="hidden" id="minPrice" name="minPrice">
+                            <input type="hidden" id="maxPrice" name="maxPrice">
+                            <button class="btn btn-outline-success m-auto" id="filter-btn" type="button">Filter</button>
+                        </form>
+
+                    </div>
+                    <!-- Price Filter Options End -->
+                    <!-- Sidebar Categorie Start -->
+                    <div class="sidebar-categorie mb-30">
+                        <h3 class="sidebar-title">categories</h3>
+                        <ul class="sidbar-style">
+                            @foreach(var item in Model.Categories)
+                            {
+                                var productCount = Model.Products.Count(p => p.CategoryId == item.Id);
+                                <li class="form-check">
+                                    <input class="form-check-input"
+                                        onchange="location.href='@Url.Action("Category", "Product", new { id = item.Id })'"
+                                        id="category_@item.Id"
+                                        type="checkbox">
+                                    <label class="form-check-label" for="category_@item.Id">@item.Name (@item.ProductCount)</label>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <!-- Sidebar Categorie Start -->
+                </div>
+                <!-- Single Banner Start -->
+                <div class="sidebar-banner sidebar-banner-relative mt-30">
+                    <a href="shop.html"><img class="ful" src="~/home/img/banner/hop-banner-4.jpg" alt=""></a>
+                </div>
+                <!-- Single Banner End -->
+            </div>
+            <!-- Sidebar Shopping Option End -->
+        </div>
+        <!-- Row End -->
+    </div>
+    <!-- Container End -->
+</div>
+<script>
+    var minPrice = @ViewBag.MinPrice;
+    var maxPrice = @ViewBag.MaxPrice;
+</script>

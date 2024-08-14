@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Admin.cshtml";
+}
+
+<div class="page-container relative h-full flex flex-auto flex-col px-4 sm:px-6 md:px-8 py-4 sm:py-6">
+    <div class="container mx-auto h-full">
+        <div id="welcome-page-0" class="welcome-page-section h-full flex flex-col items-center justify-center">
+            <div class="text-center">
+                <img src="~/admin/img/others/welcome.png" alt="Welcome" class="mx-auto mb-8">
+                <h3 class="mb-2">Welcome on Board, lets get started with Elstar</h3>
+                <p class="text-base">Telling us a bit about yourself to get the best experience, this will only take a minute or two.</p>
+                <div class="mt-8 max-w-[350px] mx-auto">
+                    <a class="btn btn-solid block w-full mb-2 next-button" asp-controller="Admin" asp-action="ProjectDashBoard">Get started</a>
+                   <a class="btn btn-plain block w-full skip-button" asp-controller="Admin" asp-action="ProjectDashBoard">Skip now</a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+

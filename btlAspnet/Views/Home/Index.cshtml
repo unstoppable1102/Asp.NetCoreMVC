@@ -1,0 +1,197 @@
+﻿@model btlAspnet.Models.ProductCategoryViewModel
+<div class="slider-area">
+    <div class="slider-activation owl-dot-style owl-carousel">
+        <div class="single-slider pt-165 pb-225 bg-img" style="background-image:url(home/img/slider/slider-bg-1.jpg);">
+            <div class="container">
+                <div class="slider-content slider-animated-1">
+                    <h1 class="first-h1 animated">New Exprience</h1>
+                    <h1 class="second-h1 animated">For Traviling New </h1>
+                    <h1 class="third-h1 animated">Places.</h1>
+                    <h3 class="animated">360.00 <span>Full Package </span></h3>
+                    <div class="slider-btn mt-75">
+                        <a class="animated" href="product-details.html">Shop Now <i class="animated icon-right-arrow"></i> </a>
+                    </div>
+                    <div class="slider-single-img-1">
+                        <img class="animated" alt="categorie-img" src="~/home/img/slider/single-slider-1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slider pt-165 pb-225 bg-img" style="background-image:url(~/home/img/slider/slider-bg-1.jpg);">
+            <div class="container">
+                <div class="slider-content slider-animated-2">
+                    <h1 class="first-h1 animated">New Exprience</h1>
+                    <h1 class="second-h1 animated">For Traviling New </h1>
+                    <h1 class="third-h1 animated">Places.</h1>
+                    <h3 class="animated">360.00 <span>Full Package </span></h3>
+                    <div class="slider-btn mt-75">
+                        <a class="animated" href="product-details.html">Shop Now <i class="animated icon-right-arrow"></i></a>
+                    </div>
+                    <div class="slider-single-img-2">
+                        <img class="animated" alt="categorie-img" src="~/home/img/slider/single-slider-2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-item-number"></div>
+</div>
+<!-- Slider Area End Here -->
+<!-- Online Support Area Start Here -->
+<div class="support-style-three pt-80">
+    <div class="coustom-container">
+        <div class="support-inner">
+            <div class="row">
+                <!-- Single Support Start -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="single-support mb-all-30">
+                        <div class="support-img">
+                            <i class="icon-shipped"></i>
+                        </div>
+                        <div class="support-desc">
+                            <h4>Free Home Delivary.</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Support End -->
+                <!-- Single Support Start -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="single-support mb-all-30">
+                        <div class="support-img">
+                            <i class="icon-support"></i>
+                        </div>
+                        <div class="support-desc">
+                            <h4>24 x 7 Online Support</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Support End -->
+                <!-- Single Support Start -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="single-support">
+                        <div class="support-img">
+                            <i class="icon-debt"></i>
+                        </div>
+                        <div class="support-desc">
+                            <h4>Secure Paument</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Support End -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Online Support Area End Here -->
+<!-- Our Categorie Two Start Here -->
+<div class="our-categorie-two pt-80">
+    <div class="coustom-container">
+        <!-- Single Image Categorie Activation Start -->
+        <div class="single-img-categorie-active owl-carousel">
+            @foreach(var item in Model.Categories)
+            {
+                <div class="single-img-categorie" style="height: 489px">
+                    <a href="@Url.Action("Category", "Product", new { id = item.Id })">
+                        <img src="~/images/@item.Image" alt="categorie-img">
+                    </a>
+                    <div class="single-cat-desc">
+                        <a href="@Url.Action("Category", "Product", new { id = item.Id })">@item.Name</a>
+                    </div>
+                </div>
+            }
+          
+        </div>
+        <!-- Single Image Categorie Activation End -->
+    </div>
+</div>
+<!-- Our Categorie Two End Here -->
+<!-- Best Seller Product Area Start Here -->
+<div class="Products-area-wrapper pt-80 pb-87">
+    <div class="container">
+        <!-- Section Title Start -->
+        <div class="section-title text-center mb-45">
+            <h2>Products</h2>
+        </div>
+        <!-- Section Title End -->
+        <!-- Second Featured Product Activation Start -->
+        <div class="Products-area">
+            <div class="row">
+                @foreach(var p in Model.Products)
+                 {
+                    <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                        <!-- Single Product Start -->
+                        <div class="single-aboss-product mb-3">
+                            <div class="pro-img" style="height: 360px">
+                                <a href="@Url.Action("Detail", "Product", new { id = p.Id })"><img src="~/images/@p.Image" alt=""></a>
+                                <div class="pro-actions">
+                                    <a data-toggle="modal" data-target="#product-window" class="quick-view" href="#"><i class="icon-zoom"></i></a>
+                                </div>
+                            </div>
+                            <div class="pro-content">
+                                <h4><a href="product-details.html">@p.ProductName</a></h4>
+                                <div class="pro-price-cart">
+                                    <div class="pro-home-price">
+                                        <span>$@p.Price</span>
+                                    </div>
+                                    <div class="pro-cart">
+                                        <a title="Add To Cart" href="#"><i class="icon-cart"></i></a>
+                                        <a title="Wishlist" href="#"><i class="icon-like"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Product End -->
+                    </div>
+                }
+                    
+                
+               
+                </div>
+            </div>
+        </div>
+        <!-- Second Featured Product Activation End -->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Best Seller Product Area End Here -->
+<!-- Section Banner Start -->
+<div class="banner-area">
+</div>
+<!-- Section Banner End -->
+<div class="best-seller-area pt-80 pb-90">
+    <div class="container">
+        <div class="section-title text-center mb-45">
+            <h2>New Arrivals</h2>
+        </div>
+        <div class="best-seller-active owl-carousel">
+            @foreach (var na in ViewBag.ProductNA)
+            {
+                <div class="single-aboss-product">
+                    <div class="pro-img">
+                        <a href="product-details.html"><img src="~/images/@na.Image" alt=""></a>
+                        <div class="pro-actions">
+                            <a data-toggle="modal" data-target="#product-window" class="quick-view" href="#"><i class="icon-zoom"></i></a>
+                        </div>
+                    </div>
+                    <div class="pro-content">
+                        <h4><a href="product-details.html">@na.ProductName</a></h4>
+                        <div class="pro-price-cart">
+                            <div class="pro-home-price">
+                                <span>$@na.Price</span>
+                            </div>
+                            <div class="pro-cart">
+                                <a title="Add To Cart" href="#"><i class="icon-cart"></i></a>
+                                <a title="Wishlist" href="#"><i class="icon-like"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+           
+            
+        </div>
+    </div>
+</div>

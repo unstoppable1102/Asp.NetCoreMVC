@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|d:\\bachkhoa-aptech\\sem 3\\asp net core\\btl\\btlaspnet\\btlaspnet\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|solutionrelative:btlaspnet\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|d:\\bachkhoa-aptech\\sem 3\\asp net core\\btl\\btlaspnet\\btlaspnet\\views\\shared\\_home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|solutionrelative:btlaspnet\\views\\shared\\_home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|d:\\bachkhoa-aptech\\sem 3\\asp net core\\btl\\btlaspnet\\btlaspnet\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|solutionrelative:btlaspnet\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|d:\\bachkhoa-aptech\\sem 3\\asp net core\\btl\\btlaspnet\\btlaspnet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|solutionrelative:btlaspnet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|d:\\bachkhoa-aptech\\sem 3\\asp net core\\btl\\btlaspnet\\btlaspnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|solutionrelative:btlaspnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|d:\\bachkhoa-aptech\\sem 3\\asp net core\\btl\\btlaspnet\\btlaspnet\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|solutionrelative:btlaspnet\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|d:\\bachkhoa-aptech\\sem 3\\asp net core\\btl\\btlaspnet\\btlaspnet\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|solutionrelative:btlaspnet\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|d:\\bachkhoa-aptech\\sem 3\\asp net core\\btl\\btlaspnet\\btlaspnet\\models\\productcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6A03012-16BF-4F01-9B27-68A6555499B1}|btlAspnet\\btlAspnet.csproj|solutionrelative:btlaspnet\\models\\productcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "btlAspnet\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "btlAspnet\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFsAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T09:18:48.29Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Home.cshtml",
+              "DocumentMoniker": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Views\\Shared\\_Home.cshtml",
+              "RelativeDocumentMoniker": "btlAspnet\\Views\\Shared\\_Home.cshtml",
+              "ToolTip": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Views\\Shared\\_Home.cshtml",
+              "RelativeToolTip": "btlAspnet\\Views\\Shared\\_Home.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFIAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T11:09:38.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "btlAspnet\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "btlAspnet\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T10:32:38.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "btlAspnet\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "btlAspnet\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwDsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T10:26:10.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "btlAspnet\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "btlAspnet\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T10:26:09.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Program.cs",
+              "RelativeDocumentMoniker": "btlAspnet\\Program.cs",
+              "ToolTip": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Program.cs",
+              "RelativeToolTip": "btlAspnet\\Program.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T10:19:59.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductCategoryViewModel.cs",
+              "DocumentMoniker": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Models\\ProductCategoryViewModel.cs",
+              "RelativeDocumentMoniker": "btlAspnet\\Models\\ProductCategoryViewModel.cs",
+              "ToolTip": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Models\\ProductCategoryViewModel.cs",
+              "RelativeToolTip": "btlAspnet\\Models\\ProductCategoryViewModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T09:23:57.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "btlAspnet\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Bachkhoa-Aptech\\Sem 3\\ASP NET Core\\BTL\\btlAspnet\\btlAspnet\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "btlAspnet\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAYwBQAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T09:18:52.305Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
